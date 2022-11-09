@@ -1,6 +1,6 @@
 app-id: net.seamly.seamly2d
 runtime: org.kde.Platform
-runtime-version: '5.15-22.08'
+runtime-version: 5.15-22.08
 sdk: org.kde.Sdk
 command: seamly2d
 finish-args:
@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/FashionFreedom/Seamly2D.git
-        tag: v2022-11-07.1956
-        commit: 1a340353300f40481276824bf210c7d45eda2c8f
+        tag: v2022-11-07.0315
+        commit: bca230896aae1d3d142c7362889adc676b909822
         x-checker-data:
           type: json
           url: https://api.github.com/repos/FashionFreedom/Seamly2D/releases/latest
