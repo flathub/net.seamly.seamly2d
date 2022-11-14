@@ -45,7 +45,8 @@ modules:
           type: json
           url: https://api.github.com/repos/FashionFreedom/Seamly2D/releases/latest
           tag-query: .tag_name
-          version-query": $tag
+          version-query: $tag
+          timestamp-query: .published_at
       - type: patch
         path: 0001-flatpak.patch
       - type: file
