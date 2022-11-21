@@ -19,9 +19,10 @@
         </screenshot>
     </screenshots>
     <releases>
+        <release version="v2022-11-21.0304" date="2022-11-21"/>
         <release version="v2022-11-14.0313" date="2022-11-14"/>
         <release version="v2022-11-09.1950" date="2022-11-09"/>
         <release version="v2022-10-31.0329" date="2022-10-31"/>
     </releases>
-    <content_rating type="oars-1.1" />
+    <content_rating type="oars-1.1"/>
 </component>
