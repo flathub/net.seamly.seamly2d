@@ -32,15 +32,20 @@ modules:
       - CONFIG+=noDebugSymbols
       - CONFIG+=noTests
     post-install:
-      - desktop-file-edit --set-icon ${FLATPAK_ID} /app/share/applications/seamly2d.desktop
+      - desktop-file-edit --set-icon ${FLATPAK_ID} --set-key Exec --set-value
+        'seamly2d %F' /app/share/applications/seamly2d.desktop
       - install -Dm644 share/img/Seamly2D_logo_512x512.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png
       - install -Dm644 net.seamly.seamly2d.metainfo.xml -t /app/share/metainfo
       - install -Dm644 dist/debian/seamly2d.sharedmimeinfo /app/share/mime/packages/${FLATPAK_ID}.xml
+      - mv /app/share/applications/seamlyme.desktop /app/share/applications/${FLATPAK_ID}.seamlyme.desktop
+      - desktop-file-edit --set-icon ${FLATPAK_ID}.seamlyme --set-key Exec --set-value
+        'seamlyme %F' /app/share/applications/${FLATPAK_ID}.seamlyme.desktop
+      - install -Dm644 dist/seamlyme.png /app/share/icons/hicolor/64x64/apps/${FLATPAK_ID}.seamlyme.png
     sources:
       - type: git
         url: https://github.com/FashionFreedom/Seamly2D.git
-        tag: v2022-12-26.0226
-        commit: 67674afe7ceda43c792908fa37d610398e9e5765
+        tag: v2022-12-27.1040
+        commit: 800ae84bd99f37cb3cd0753e3486d09c7650b857
         x-checker-data:
           type: json
           url: https://api.github.com/repos/FashionFreedom/Seamly2D/releases/latest

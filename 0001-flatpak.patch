@@ -1,13 +1,12 @@
-From 3b3e702187230e1a7e3fafb816379277a73bb02b Mon Sep 17 00:00:00 2001
+From fc5f1b507f189769779a414f6be3b51658e9da90 Mon Sep 17 00:00:00 2001
 From: Christoph Settgast <csett86@web.de>
 Date: Mon, 7 Nov 2022 18:05:11 +0100
 Subject: [PATCH] flatpak
 
 ---
- common.pri                              |  3 ---
- src/libs/vmisc/vabstractapplication.cpp |  2 +-
- src/libs/vmisc/vcommonsettings.cpp      |  2 +-
- 3 files changed, 2 insertions(+), 5 deletions(-)
+ common.pri                         | 3 ---
+ src/libs/vmisc/vcommonsettings.cpp | 2 +-
+ 2 files changed, 1 insertion(+), 4 deletions(-)
 
 diff --git a/common.pri b/common.pri
 index fce91cc14..e3c88b5f1 100644
@@ -33,24 +32,11 @@ index fce91cc14..e3c88b5f1 100644
      -Winit-self \
  #    -Wstack-protector \
      -Wunreachable-code \
-diff --git a/src/libs/vmisc/vabstractapplication.cpp b/src/libs/vmisc/vabstractapplication.cpp
-index 93355229f..6a993b8f1 100644
---- a/src/libs/vmisc/vabstractapplication.cpp
-+++ b/src/libs/vmisc/vabstractapplication.cpp
-@@ -162,7 +162,7 @@ QString VAbstractApplication::translationsPath(const QString &locale) const
-     }
- #else // Unix
-     Q_UNUSED(locale)
--    return QCoreApplication::applicationDirPath() + QStringLiteral("/../share") + trPath;
-+    return QStringLiteral("/app/share/seamly2d/translations");
- #endif
- }
- 
 diff --git a/src/libs/vmisc/vcommonsettings.cpp b/src/libs/vmisc/vcommonsettings.cpp
-index 26ea1cc5c..4fa868854 100644
+index 6090bf627..35d5ee3c7 100644
 --- a/src/libs/vmisc/vcommonsettings.cpp
 +++ b/src/libs/vmisc/vcommonsettings.cpp
-@@ -212,7 +212,7 @@ QStringList ClearFormats(const QStringList &predefinedFormats, QStringList forma
+@@ -213,7 +213,7 @@ QStringList ClearFormats(const QStringList &predefinedFormats, QStringList forma
  static const QString commonIniFilename = QStringLiteral("common");
  
  #if !defined(Q_OS_WIN)
