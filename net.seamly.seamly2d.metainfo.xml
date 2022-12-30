@@ -8,6 +8,8 @@
     <project_license>GPL-3.0+</project_license>
     <developer_name>Seamly2D project</developer_name>
     <url type="homepage">https://seamly.net</url>
+    <url type="bugtracker">https://github.com/FashionFreedom/Seamly2D/issues</url>
+    <url type="donation">https://www.paypal.com/donate?hosted_button_id=9NFZ87CECJN98</url>
     <description>
         <p>Seamly2D is pattern design software to create reusable, scalable, sharable custom-fit patterns using bespoke tailoring, haute couture, and historical pattern drafting techniques. Seamly2D saves time and improves fit by creating patterns that are reusable parametric CAD engineering documents.</p>
         <p>Unlike other pattern design software, Seamly2D allows designers to have complete control of the patternmaking process. Each reusable, scalable pattern can read multi-size tables for boutique sizing, and read individual measurement files for custom-fit.</p>
