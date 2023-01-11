@@ -29,6 +29,8 @@ modules:
   - name: seamly2d
     buildsystem: qmake
     config-opts:
+      - -config
+      - release
       - CONFIG+=noDebugSymbols
       - CONFIG+=noTests
     post-install:
