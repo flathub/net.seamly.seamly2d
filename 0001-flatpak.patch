@@ -1,42 +1,17 @@
-From fc5f1b507f189769779a414f6be3b51658e9da90 Mon Sep 17 00:00:00 2001
+From a06a3041eec370bf2382330161d2bbe414295ff1 Mon Sep 17 00:00:00 2001
 From: Christoph Settgast <csett86@web.de>
 Date: Mon, 7 Nov 2022 18:05:11 +0100
 Subject: [PATCH] flatpak
 
 ---
- common.pri                         | 3 ---
  src/libs/vmisc/vcommonsettings.cpp | 2 +-
- 2 files changed, 1 insertion(+), 4 deletions(-)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/common.pri b/common.pri
-index fce91cc14..e3c88b5f1 100644
---- a/common.pri
-+++ b/common.pri
-@@ -268,19 +268,16 @@ ISYSTEM += \
- # Usefull GCC warnings keys.
- GCC_DEBUG_CXXFLAGS += \
-     -O0 \ # Turn off oprimization.
--    $$ISYSTEM \ # Ignore warnings Qt headers.
-     # Last gdb doesn't show debug symbols with Qt Creator (issue with Python 3 and debug scripts that use Python 2.7).
-     # Solution to use older version gdb, that's why we use old standard of debug information.
-     -gdwarf-3 \
-     -Wall \
-     -Wextra \
-     -pedantic \
--    -Weffc++ \
-     -Woverloaded-virtual \
-     -Wctor-dtor-privacy \
-     -Wnon-virtual-dtor \
-     -Wold-style-cast \
--    -Wconversion \
-     -Winit-self \
- #    -Wstack-protector \
-     -Wunreachable-code \
 diff --git a/src/libs/vmisc/vcommonsettings.cpp b/src/libs/vmisc/vcommonsettings.cpp
-index 6090bf627..35d5ee3c7 100644
+index fa7f34b4b..1a6051ed6 100644
 --- a/src/libs/vmisc/vcommonsettings.cpp
 +++ b/src/libs/vmisc/vcommonsettings.cpp
-@@ -213,7 +213,7 @@ QStringList ClearFormats(const QStringList &predefinedFormats, QStringList forma
+@@ -225,7 +225,7 @@ QStringList ClearFormats(const QStringList &predefinedFormats, QStringList forma
  static const QString commonIniFilename = QStringLiteral("common");
  
  #if !defined(Q_OS_WIN)
