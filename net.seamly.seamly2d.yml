@@ -9,6 +9,7 @@ finish-args:
   - --socket=cups
   - --filesystem=home
   - --device=dri
+  - --socket=pulseaudio
 rename-desktop-file: seamly2d.desktop
 separate-locales: false
 
