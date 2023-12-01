@@ -21,8 +21,8 @@ modules:
       - -DENABLE_BOOST=OFF
     sources:
       - type: archive
-        url: https://poppler.freedesktop.org/poppler-23.09.0.tar.xz
-        sha256: 80d1d44dd8bdf4ac1a47d56c5065075eb9991790974b1ed7d14b972acde88e55
+        url: https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
+        sha256: beba398c9d37a9b6d02486496635e08f1df3d437cfe61dab2593f47c4d14cdbb
         x-checker-data:
           type: anitya
           project-id: 3686
@@ -47,8 +47,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/FashionFreedom/Seamly2D.git
-        tag: v2023.10.16.148
-        commit: 0bf76e986a7f04de3e98faabcdc8e4678f2ea176
+        tag: v2023.11.27.149
+        commit: afa19457543464dd27ff5820c6cdc16fbe0534f8
         x-checker-data:
           type: json
           url: https://api.github.com/repos/FashionFreedom/Seamly2D/releases/latest
