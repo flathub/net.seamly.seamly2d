@@ -19,6 +19,7 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DENABLE_BOOST=OFF
+      - -DENABLE_QT6=OFF
     sources:
       - type: archive
         url: https://poppler.freedesktop.org/poppler-23.12.0.tar.xz
